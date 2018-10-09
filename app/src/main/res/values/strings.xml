@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AustraliaWeather</string>
+    <string name="error">Error</string>
+    <string name="update_error">Update error</string>
+    <string name="retry">RETRY</string>
+    <string name="title">Australia Weather</string>
+    <string name="API_KEY">97524baeb4c3517172908</string>
+</resources>

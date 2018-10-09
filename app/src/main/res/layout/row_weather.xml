@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rowwea_lay_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/standardrowback"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/rowwea_img_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            tools:src="@drawable/sunny" />
+
+        <TextView
+            android:id="@+id/rowwea_txt_city"
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/rowwea_img_icon"
+            tools:text="Sydney" />
+
+        <TextView
+            android:id="@+id/rowwea_txt_temp"
+            style="@style/TextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_city"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/rowwea_img_icon"
+            android:textSize="36sp"
+            tools:text="23°" />
+
+        <TextView
+            android:id="@+id/rowwea_txt_weathdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_city"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/rowwea_txt_temp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Partly Cloudy" />
+
+        <TextView
+            android:id="@+id/rowwea_lbl_feelslike"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_weathdesc"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/rowwea_txt_temp"
+            android:text="Feels Like " />
+
+        <TextView
+            android:id="@+id/rowwea_txt_feelslike"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_weathdesc"
+            android:layout_toRightOf="@+id/rowwea_lbl_feelslike"
+            tools:text="22°" />
+
+        <TextView
+            android:id="@+id/rowwea_lbl_precipmm"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_weathdesc"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/rowwea_txt_feelslike"
+            android:text="Prec. " />
+
+        <TextView
+            android:id="@+id/rowwea_txt_precipmm"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_weathdesc"
+            android:layout_toRightOf="@id/rowwea_lbl_precipmm"
+            tools:text="5mm" />
+
+        <LinearLayout
+            android:id="@+id/rowwea_lay_favinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_txt_feelslike"
+            android:layout_toRightOf="@id/rowwea_img_icon"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:text="Humidity: " />
+
+            <TextView
+                android:id="@+id/rowwea_txt_humidity"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                tools:text="70%" />
+
+            <TextView
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:text="Baroom: " />
+
+            <TextView
+                android:id="@+id/rowwea_txt_barom"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                tools:text="1200" />
+
+            <TextView
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:text="Wind speed: " />
+
+            <TextView
+                android:id="@+id/rowwea_txt_windspeed"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                tools:text="22 km/h" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rowwea_lbl_observedat"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_lay_favinfo"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/rowwea_img_icon"
+            android:text="Observed at " />
+
+        <TextView
+            android:id="@+id/rowwea_txt_observedat"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowwea_lay_favinfo"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/rowwea_lbl_observedat"
+            tools:text="8:09 AM" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
